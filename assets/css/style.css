@@ -1,0 +1,48 @@
+body {
+	background: url('../images/ancient-relic-bg.jpg');
+}
+
+h2 {
+	color: yellow;
+}
+
+.character-img {
+	height: 200px;
+	width: auto;
+}
+
+#logo {
+	padding: 5px;
+	height: 175px;
+	width: auto;
+}
+
+#instructions {
+	padding: 5px;
+	margin-left: 35px;
+	height: 250px;
+}
+
+img #hero {
+	border-style: dashed;
+	img {
+    border-radius: 50%;
+	};
+}
+
+img #foe {
+	border-style: dashed;
+	img {
+    border-radius: 50%;
+	};
+}
+
+img .defeated {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+.btn-danger {
+	margin: 5px;
+}
+

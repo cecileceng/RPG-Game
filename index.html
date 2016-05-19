@@ -58,39 +58,39 @@ Array is ordered
 // Characters and Stats (object within object)
 var characters = {
 	daisy: {
-	hp: 150
-	attack: 15
-	counter: 10
+	hp: 150,
+	attack: 15,
+	counter: 10,
 	href: 'assets/images/daisy.jpg'
 	},
 	agnes: {
-	hp: 250
-	attack: 20
-	counter: 10
+	hp: 250,
+	attack: 20,
+	counter: 10,
 	href: 'assets/images/agnes.jpg'
-	}
+	},
 	marie: {
-	hp: 150
-	attack: 15
-	counter: 10
+	hp: 150,
+	attack: 15,
+	counter: 10,
 	href: 'assets/images/marie.jpg'
-	}
+	},
 	skids: {
-	hp: 250
-	attack: 10
-	counter: 20
+	hp: 250,
+	attack: 10,
+	counter: 20,
 	href: 'assets/images/skids.jpg'
-	}
+	},
 	sistermary: {
-	hp: 300
-	attack: 10
-	counter: 25
+	hp: 300,
+	attack: 10,
+	counter: 25,
 	href: 'assets/images/sister-mary.jpg'
-	}
+	},
 	monty: {
-	hp: 300
-	attack: 20
-	counter: 15
+	hp: 300,
+	attack: 20,
+	counter: 15,
 	href: 'assets/images/monterrey.jpg'
 	}
 };
@@ -107,6 +107,8 @@ document.getElementById('agnes').on('click', function(e) {
   console.log(characters[characterBoxId].attack)
 })
 
+
+
 //FUNCTIONS
 /*
 $("#id").css("display", "none");
@@ -115,13 +117,13 @@ for show:
 $("#id").css("display", "");
 for hide*/
 
-function showDiv()
-{
-    agnes.visible = true;
-}
 
-function(cthuluTime) {
-	showDiv();
+
+function cthuluTime(){
+	function showDiv();
+	{
+	    agnes.visible = true;
+	}
 $("agnes").css("display", "none")
 };
 

@@ -8,182 +8,35 @@
 </head>
 <body>
 	<div class="row">
-		<div class="col-sm-6">
+		<div class="col-sm-4">
 			<header>
 				<img src="assets/images/eldritch-logo.png" alt="Eldritch Horror RPG" id="logo">
 				<p><img src="assets/images/instructions.jpg" alt="Instructions" id="instructions"></p>
 			</header>
 		</div>
-		<div class="col-sm-6 character-img" id="selectable">
-			<div id="agnes"></div>
-			<div id="daisy"></div>
-			<div id="monty"></div>
-			<div id="marie"></div>
-			<div id="sistermary"></div>
-			<div id="skids"></div>
+		<div class="col-sm-8 character-img" id="selectable">
+			<div class="row">
+				<div class="col-sm-3 allCharas" id="agnes"></div>
+<!-- Removing characters for reasons
+				<div class="col-sm-4" id="daisy"></div>
+				<div class="col-sm-4" id="monty"></div>
+-->
+				<div class="col-sm-3 allCharas" id="marie"></div>
+				<div class="col-sm-3 allCharas" id="sistermary"></div>
+				<div class="col-sm-3 allCharas" id="skids"></div>
+			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-6" id="hero">
+		<div class="col-sm-4" id="outcome" col-sm-4></div>
+		<div class="col-sm-4 hero-img" id="hero">
 		</div>
-		<div class="col-sm-6" id="foe">
-		<button type="button" class="btn btn-danger">Attack!</button>
-			<div id="outcome"></div>
+		<div class="col-sm-4 foe-img" id="foe">
+			<button type="button" class="btn btn-danger">Attack!</button>
 		</div>
+	</div>
 </body>
-<script>
-
-
-/*
-Each character in the game has 3 attributes: Health Points, Attack Power, and Counter Attack Power.
-
-Each time the player attacks, their character's Attack Power increases by its base Attack Power. So if the base Attack Power is 6, each attack will increase the Attack Power by 6. (12, 18, 24, 30 etc...)
-
-The enemy character only has Counter Attack Power and their Counter Attack Power never changes.
-
-The Health Points, Attack Power, and Counter Attack Power of each character will be different.
-
-None of the characters in the game can heal or recover Health Points, so the point of the game is to pick a character and fight an enemy that has low Counter Attack Power first and build up your own Attack Power before you lose all your Health Points.
-
-Depending on game play, you can win or lose with any of the characters in the game.
-
-Object is a garbage bag order is not preserved
-Array is ordered
-*/
-
-
-//LOOK FOR FUNC IN JQUERY .css to change CSS also add.class remove.class .toggle (display display none/block)
-
-//VARIABLES
-// Characters and Stats (object within object)
-var characters = {
-	daisy: {
-	hp: 150,
-	attack: 15,
-	counter: 10,
-	href: 'assets/images/daisy.jpg'
-	},
-	agnes: {
-	hp: 250,
-	attack: 20,
-	counter: 10,
-	href: 'assets/images/agnes.jpg'
-	},
-	marie: {
-	hp: 150,
-	attack: 15,
-	counter: 10,
-	href: 'assets/images/marie.jpg'
-	},
-	skids: {
-	hp: 250,
-	attack: 10,
-	counter: 20,
-	href: 'assets/images/skids.jpg'
-	},
-	sistermary: {
-	hp: 300,
-	attack: 10,
-	counter: 25,
-	href: 'assets/images/sister-mary.jpg'
-	},
-	monty: {
-	hp: 300,
-	attack: 20,
-	counter: 15,
-	href: 'assets/images/monterrey.jpg'
-	}
-};
-
-//HP as stats var
-//AP as stats var?
-//CAP as stats var? 
-
-var agnesHp = characters.agnes.hp;
-console.log(agnesHp);
-document.getElementById('agnes').on('click', function(e) { 
-  var characterBoxId = e.target.id;
-  console.log(e);
-  console.log(characters[characterBoxId].attack)
-})
-
-
-
-//FUNCTIONS
-/*
-$("#id").css("display", "none");
-for show:
-
-$("#id").css("display", "");
-for hide*/
-
-
-
-function cthuluTime(){
-	function showDiv();
-	{
-	    agnes.visible = true;
-	}
-$("agnes").css("display", "none")
-};
-
-/*
-if enemies =0 && hp >=1 = true {
-	}
-		var html = 
-		"<p>After neutralizing all that would relish the chance to resurrect the calamity, " + selected + " pilfered the bodies for ammunition and any other useful items. If " + selected + " was going to stop Cthulu from destroying the world then every bullet counted.</p>" 
-		;
-		document.querySelector("#outcome").innerHTML = html;
-} else if enemies >1 && hp <=0 = true {
-	var html = 
-		"<p>After taking so much damage " + selected + " began sputtering blood as their sharp breaths began slowing down. As " + selected + "\' vision began to blur, thoughts of the impending doom that would befall the world flooded " + selected + "\'s mind with the devastating regret of not having been able to do anything about it.</p>" 
-		;
-		document.querySelector("#outcome").innerHTML = html;
-}
-*/
-//PROGRAM
-cthuluTime();
-
-// Select Character
-	// has to store the info that it's selected
-// All other Characters Covert to Enemies
-// Click on Enemy
-//	Enemy gets sent to Defender area 
-// Buttons added for Attack
-// HP counter displayed and goes lower for Attacker and Defender
-// At 0 hp for Enemy display win screen and move on to click next Enemy
-// Previous enemy grayed out
-	// Click on Enemy line 18-22 code reuse?
-// When there are no enemies left and Hero is > 0 display winner screen -- reset
-// If hero < || = 0  display defeated screen -- reset
-
-/* Code from Rob
-var chars = {
-	legolas: {
-  	hp: 100,
-    attack: 200,
-    href: 'ndkjhfse'
-
-  },
-  frodo: {
-  	hp: 300,
-    attack: 100,
-    href: 'jhfdsh'
-  }
-};
-
-var legolasHp = chars.legolas.hp;
-console.log(legolasHp);
-
-document.getElementById('legolas').on('click', function(e) { 
-  var characterBoxId = e.target.id;
-  console.log(e);
-  console.log(chars[characterBoxId].attack)
-})
-*/
-
-
-
-</script>
 <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js">
+</script>
 </html>

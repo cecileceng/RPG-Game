@@ -6,28 +6,21 @@ h2 {
 	color: yellow;
 }
 
+.btn-danger {
+	margin: 5px;
+}
+
 .character-img {
 	height: 200px;
 	width: auto;
 }
 
-#logo {
-	padding: 5px;
-	height: 175px;
-	width: auto;
-}
-
-#instructions {
-	padding: 5px;
-	margin-left: 35px;
-	height: 250px;
-}
-
-img #hero {
-	border-style: dashed;
-	img {
+.hero-img img {
     border-radius: 50%;
-	};
+}
+
+.foe-img img {
+	border-style: dashed;
 }
 
 img #foe {
@@ -42,7 +35,79 @@ img .defeated {
     filter: grayscale(100%);
 }
 
-.btn-danger {
-	margin: 5px;
+#logo {
+	padding: 5px;
+	height: 175px;
+	width: auto;
 }
 
+#instructions {
+	padding: 5px;
+	margin-left: 35px;
+	height: 250px;
+}
+
+#hero {
+	border-style: dashed;
+	img {
+    border-radius: 50%;
+	};
+}
+
+#selectable {
+	margin: 5px;
+	margin-top: 75px;
+}
+
+#foe {
+
+}
+
+#outcome {
+	content:url('../images/outcome_placeholder.jpg');
+	padding: 5px;
+	margin-left: 50px;
+	height: 200px;
+}
+
+#agnes {
+	content:url('../images/agnes.jpg');
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}
+
+#daisy {
+	content:url('../images/daisy.jpg');
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}
+
+#marie {
+	content:url('../images/marie.jpg');
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}
+
+#monty {
+	content:url('../images/monterrey.jpg');
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}
+
+#sistermary {
+	content:url('../images/sister-mary.jpg');
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}
+
+#skids {
+	content:url('../images/skids.jpg');
+	width: 150px;
+	height: auto;
+	margin: 10px;
+}

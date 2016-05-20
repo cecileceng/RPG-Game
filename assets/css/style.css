@@ -6,7 +6,16 @@ h2 {
 	color: yellow;
 }
 
-.btn-danger {
+.allCharas {
+	float:left; 
+	width:25%;
+}
+
+.col-xs-3 {
+	width: 25%;
+}
+
+.btn-danger .btn-info {
 	margin: 5px;
 }
 
@@ -45,62 +54,56 @@ img .defeated {
 	height: 250px;
 }
 
-#hero {
-}
-
 #selectable {
 	margin: 5px;
 	margin-top: 75px;
-}
-
-#foe {
 }
 
 #outcome {
 	content:url('../images/outcome_placeholder.jpg');
 	padding: 5px;
 	margin-left: 50px;
-	width: 300px;
+	width: 300px; 
 }
 
 #agnes {
 	content:url('../images/agnes.jpg');
 	width: 175px;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 }
 
 #daisy {
 	content:url('../images/daisy.jpg');
 	width: 175px;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 }
 
 #marie {
 	content:url('../images/marie.jpg');
 	width: 175px;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 }
 
 #monty {
 	content:url('../images/monterrey.jpg');
 	width: 175px;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 }
 
 #sistermary {
 	content:url('../images/sister-mary.jpg');
 	width: 175px;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 }
 
 #skids {
 	content:url('../images/skids.jpg');
 	width: 175px;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 }

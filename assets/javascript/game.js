@@ -125,9 +125,10 @@ function selectHero(){
 	$("#hero").append();
 	$('chosenHero')addClass('#hero-img')
 }
-*/
+
 if chosenFoe.hp <= 0;
 	$(this).addClass('.defeated')
+*/
 /*
 if enemies.hp <= 0 {
 	$('#id').hide();
@@ -148,6 +149,13 @@ if enemies =0 && hp >=1 = true {
 */
 //PROGRAM
 cthuluTime();
+
+/*
+$(document).ready(function(){
+  $(".btn-info").click(function(){
+ location.reload();
+  });
+*/
 
 //Order of Operations
 /* Select Character

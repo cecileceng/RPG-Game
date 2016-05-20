@@ -1,14 +1,25 @@
 body {
 	background: url('../images/ancient-relic-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
 }
 
 h2 {
 	color: yellow;
 }
 
+.health {
+	font-family: 'Courier';
+	color: white;
+	font-size: 16px;
+	background: black;
+	border-radius: 10px;
+}
+
 .allCharas {
 	float:left; 
-	width:25%;
+	width:20%;
 }
 
 .col-xs-3 {
@@ -42,30 +53,45 @@ img .defeated {
     filter: grayscale(100%);
 }
 
+.allCharas img {
+	width: 100%;
+	padding: 2px;
+}
+
+#attack-btn {
+	vertical-align: bottom;
+}
+
+#reset-btn {
+	vertical-align: top;
+}
+
 #logo {
+	margin-top: 60px;
 	padding: 5px;
-	height: 175px;
-	width: auto;
+	height: auto;
+	width: 100%;
 }
 
 #instructions {
 	padding: 5px;
-	margin-left: 35px;
-	height: 250px;
+	margin-left: 15px;
+	height: auto;
+	width: 90%;
 }
 
 #selectable {
 	margin: 5px;
 	margin-top: 75px;
 }
-
+/*
 #outcome {
 	content:url('../images/outcome_placeholder.jpg');
 	padding: 5px;
 	margin-left: 50px;
 	width: 300px; 
-}
-
+}*/
+/*
 #agnes {
 	content:url('../images/agnes.jpg');
 	width: 175px;
@@ -80,9 +106,8 @@ img .defeated {
 	margin: 5px;
 }
 
-#marie {
-	content:url('../images/marie.jpg');
-	width: 175px;
+#marie img {
+	width: 100%;
 	height: auto;
 	margin: 5px;
 }
@@ -107,3 +132,4 @@ img .defeated {
 	height: auto;
 	margin: 5px;
 }
+*/

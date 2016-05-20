@@ -7,42 +7,58 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<!--
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="assets/images/eldritch-logo.png" alt="Eldritch Horror RPG" id="logo">
+<!--				<p><img src="assets/images/instructions.jpg" alt="Instructions" id="instructions"></p> -->
+			</div> <!-- closes line 12 col -->
+			<div class="col-md-8">
+				<div class="row" id="selectable">
+					<div class="col-xs-3 allCharas">
+						<img src="assets/images/agnes.jpg" id="agnes">
+					</div>
+					<div class="col-xs-3 allCharas">
+						<img src="assets/images/marie.jpg" id="marie">
+					</div>
+					<div class="col-xs-3 allCharas">
+						<img src="assets/images/sister-mary.jpg" id="sistermary">
+					</div>
+					<div class="col-xs-3 allCharas">
+						<img src="assets/images/skids.jpg" id="skids">
+					</div>
+				</div> <!-- closes the selectable row -->
+			</div> <!-- closes line 16 col -->
+		</div> <!-- closes line 9 row -->
+		<div class="row">
+			<div class="col-md-4" id="outcome">
+				<img src="assets/images/instructions.jpg" alt="Instructions" id="instructions">
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-xs-5 hero-img" id="hero"></div>
+					<div class="col-xs-2">
+						<button type="button" class="btn btn-danger" id="attack-btn">ATTACK</button>
+					</div>
+					<div class="col-xs-5 foe-img" id="foe"></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5 health" id="hero-hp"></div>
+						<div class="col-xs-2">
+							<button type="button" class="btn btn-info" id="reset-btn">RESET </button> 
+						</div>
+						<div class="col-xs-5 health" id="foe-hp"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- this closes the whole container -->
+	<!--
 	<audio controls autoplay>
 	  <source src="assets/LichtUndSchatten-YutakaYamada.mp3" type="audio/mpeg">
 	  Your browser does not support the audio element.
 	</audio>
 -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<img src="assets/images/eldritch-logo.png" alt="Eldritch Horror RPG" id="logo">
-				<p><img src="assets/images/instructions.jpg" alt="Instructions" id="instructions"></p>
-			</div>
-			<div class="col-md-8" id="selectable">
-				<div class="row">
-					<div class="col-xs-3 allCharas" id="agnes"></div>
-<!-- Removing characters for reasons
-					<div class="col-sm-4" id="daisy"></div>
-					<div class="col-sm-4" id="monty"></div>
--->
-					<div class="col-xs-3 allCharas" id="marie"></div>
-					<div class="col-xs-3 allCharas" id="sistermary"></div>
-					<div class="col-xs-3 allCharas" id="skids"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4" id="outcome"></div>
-		<div class="col-md-3 hero-img" id="hero"></div>
-		<div class="col-md-2">
-			<button type="button" class="btn btn-danger">ATTACK</button>
-			<br>
-			<button type="button" class="btn btn-info">RESET</button> 
-		</div>
-		<div class="col-md-3 foe-img" id="foe"></div>
-	</div>
 </body>
 <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/javascript/game.js">

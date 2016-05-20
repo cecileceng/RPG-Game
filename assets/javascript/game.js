@@ -89,15 +89,42 @@ for show:
 $("#id").css("display", "");
 for hide*/
 
+
 function cthuluTime(){
+//	function heroSelect() {
 //	if var good == false; {
 	$('.allCharas').click(function(e) {
+		/*
+	if (iCanHazHero == "") {
+		var chosenHero = $(this);
+		$('#hero').append(chosenHero);
+		heroName = $(this).attr("id");
+		console.log(heroName)
+		/*
+
+	if (myHero=="") {
+		var heroChoice = $(this);
+  		$(".heroSpot").append(heroChoice);
+  		heroName  = $(this).attr('id');
+// this selects the ID name of the character & makes it into a string, stores it in this variable
+  		heroGossip = chars[heroName].gossip;
+// this selects the gossip property, it's able to select from a string because of brackets
+  		myHero = "full";
+  		$(this).addClass("heroSpot");
+  		console.log(heroGossip);
+  		$(this).addClass("col-md-4");
+  		$(this).removeClass("character");
+  		$(this).removeClass("col-md-3");
+  		$(".lead").html("Now choose a villain to vanquish...");
+*/
+
 	$(this).appendTo('#hero');
 	$(this).addClass('hero-img good');
+	$(this).removeClass('allCharas');
 //	$('good').prop("checked");
 	var chosenHero = characters;
 console.log(this)
-console.log('Chosen Hero: ' + chosenHero);
+console.log('Chosen Hero: ' + chosenHero)
 /*	else if var evil == false; {
 	$('allCharas').click(function(e) {
 	$(this).appendTo('#foe');
@@ -186,7 +213,13 @@ If hero < || = 0  display defeated screen -- reset
 */
 
 //Notes and Code Graveyard - code I don't know what to do with but am too scared to delete forever
-/* Code from Rob
+/* 
+
+	$.each(characters, function(key, element) {
+console.log(this + "this is this")
+});
+
+Code from Rob
 var chars = {
 	legolas: {
   	hp: 100,

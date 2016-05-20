@@ -90,9 +90,15 @@ for hide*/
 function cthuluTime(){
 	$('.allCharas').click(function(e) {
 	$(this).appendTo('#hero');
-// $(this)addClass("good")
+	$(this).addClass('hero-img good');
+	var chosenHero = characters;
 console.log(this)
 console.log('Chosen Hero: ' + chosenHero);
+/*
+	$('.allCharas').click(function(e) {
+	$(this).appendTo('#foe');
+	$(this).addClass("foe-img bad")
+*/
 	});
 };
 
@@ -120,6 +126,8 @@ function selectHero(){
 	$('chosenHero')addClass('#hero-img')
 }
 */
+if chosenFoe.hp <= 0;
+	$(this).addClass('.defeated')
 /*
 if enemies.hp <= 0 {
 	$('#id').hide();

@@ -7,6 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+<!--
+	<audio controls autoplay>
+	  <source src="assets/LichtUndSchatten-YutakaYamada.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+-->
 	<div class="row">
 		<div class="col-sm-4">
 			<header>
@@ -14,7 +20,7 @@
 				<p><img src="assets/images/instructions.jpg" alt="Instructions" id="instructions"></p>
 			</header>
 		</div>
-		<div class="col-sm-8 character-img" id="selectable">
+		<div class="col-sm-8" id="selectable">
 			<div class="row">
 				<div class="col-sm-3 allCharas" id="agnes"></div>
 <!-- Removing characters for reasons
@@ -29,11 +35,9 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-4" id="outcome" col-sm-4></div>
-		<div class="col-sm-4 hero-img" id="hero">
-		</div>
-		<div class="col-sm-4 foe-img" id="foe">
-			<button type="button" class="btn btn-danger">Attack!</button>
-		</div>
+		<div class="col-sm-3 hero-img" id="hero"></div>
+		<div class="col-sm-2"><button type="button" class="btn btn-danger">Attack!</button></div>
+		<div class="col-sm-3 foe-img" id="foe"></div>
 	</div>
 </body>
 <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>

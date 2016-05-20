@@ -4,6 +4,8 @@ var iCanHazFoe = "";
 var chosenHero = "";
 var chosenFoe = "";
 var defeated = "";
+var good = false;
+var evil = false;
 // Characters and Stats (object within object)
 var characters = {
 	agnes: {
@@ -88,12 +90,23 @@ $("#id").css("display", "");
 for hide*/
 
 function cthuluTime(){
+//	if var good == false; {
 	$('.allCharas').click(function(e) {
 	$(this).appendTo('#hero');
 	$(this).addClass('hero-img good');
+//	$('good').prop("checked");
 	var chosenHero = characters;
 console.log(this)
 console.log('Chosen Hero: ' + chosenHero);
+/*	else if var evil == false; {
+	$('allCharas').click(function(e) {
+	$(this).appendTo('#foe');
+	$(this).addClass('foe-img evil');
+	$('evil').prop("checked");
+	var chosenFoe = characters;
+console.log(this)
+console.log('Chosen Foe: ' + chosenFoe);
+	}*/
 /*
 	$('.allCharas').click(function(e) {
 	$(this).appendTo('#foe');

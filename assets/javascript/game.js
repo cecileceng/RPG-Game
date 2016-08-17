@@ -4,8 +4,8 @@ var chosenHero = null;
 var chosenFoe = null;
 // Characters and Stats (object within object)
 var characters = {
-	agnes: {
-	name: "Agnes Baker",
+	zoey: {
+	name: "Zoey Samaras",
 	hp: 100,
 	attack: 20,
 	counter: 15,
@@ -28,20 +28,6 @@ var characters = {
 	attack: 15,
 	counter: 10,
 	}
-/* 
-	daisy: {
-	hp: 150,
-	attack: 15,
-	counter: 10,
-	href: 'assets/images/daisy.jpg'
-	},
-	monty: {
-	hp: 300,
-	attack: 20,
-	counter: 15,
-	href: 'assets/images/monterrey.jpg'
-	},
-*/
 };
 
 //FUNCTIONS
